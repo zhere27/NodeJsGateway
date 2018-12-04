@@ -1,0 +1,44 @@
+{
+    "development": {
+        "config_id": "development",
+        "app_name": "NodeJsGateway",
+        "app_desc": "Test bench for NodeJs multiple algorithm and logic.",
+        "node_port": 5000,
+        "json_indentation": 4,
+        "dbConfig": {
+            "user": "<username>",
+            "password": "<pasword>",
+            "server": "<server>", 
+            "database": "<database>"
+        },
+        "jwtSign": {
+            "issuer": "<issuer>",
+            "expiresIn": "24h",
+            "algorithm": "HS256"
+        },
+        "multisysConfig": {
+            "url": "<url>",
+            "secret": "<secret>",
+            "inquire": "<url>",
+            "parameters": "<url>",
+            "post": "<url>"
+        }
+    },
+    "testing": {
+        "config_id": "testing"
+    },
+    "staging": {
+        "config_id": "staging",
+        "node_port": 8080
+    },
+    "production": {
+        "config_id": "production",
+        "node_port": 8080,
+        "dbConfig": {
+            "user": "<username>",
+            "password": "<pasword>",
+            "server": "<server>", 
+            "database": "<database>"
+        }
+    }
+}
